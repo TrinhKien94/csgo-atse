@@ -48,6 +48,12 @@ for i in range(0, lenL):
         count_feat_color_case(j,dataTrain[i][j],labelTrain[i])
 print colors
 print feat_color
+file = open('feat_color.data','w')
+pickle.dump(feat_color,file)
+file.close()
+file = open('colors.data','w')
+pickle.dump(colors,file)
+file.close()
 # from sklearn.naive_bayes import MultinomialNB
 # clf = MultinomialNB()
 # clf.fit(dataTrain, labelTrain)
