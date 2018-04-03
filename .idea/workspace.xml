@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec46cc8-2a26-4030-a5e1-a3c867543feb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/extract_feature_2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test3.txt" />
-      <change beforePath="$PROJECT_DIR$/.idea/ML.iml" afterPath="$PROJECT_DIR$/.idea/ML.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/a.html" afterPath="$PROJECT_DIR$/a.html" />
-      <change beforePath="$PROJECT_DIR$/chuanhoa.py" afterPath="$PROJECT_DIR$/chuanhoa.py" />
-      <change beforePath="$PROJECT_DIR$/csgo_api.py" afterPath="$PROJECT_DIR$/csgo_api.py" />
-      <change beforePath="$PROJECT_DIR$/evaluation.py" afterPath="$PROJECT_DIR$/evaluation.py" />
-      <change beforePath="$PROJECT_DIR$/model.pkl" afterPath="$PROJECT_DIR$/model.pkl" />
-      <change beforePath="$PROJECT_DIR$/predict_wrong_continues.txt" afterPath="$PROJECT_DIR$/predict_wrong_continues.txt" />
-      <change beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
-      <change beforePath="$PROJECT_DIR$/test2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/training.csv" afterPath="$PROJECT_DIR$/training.csv" />
-      <change beforePath="$PROJECT_DIR$/training.py" afterPath="$PROJECT_DIR$/training.py" />
-    </list>
+    <list default="true" id="6ec46cc8-2a26-4030-a5e1-a3c867543feb" name="Default" comment="complete api" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -368,6 +351,14 @@
       <option name="presentableId" value="Default" />
       <updated>1522507693074</updated>
     </task>
+    <task id="LOCAL-00001" summary="complete api">
+      <created>1522772879292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522772879292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -404,7 +395,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dump" />
-    <option name="LAST_COMMIT_MESSAGE" value="dump" />
+    <MESSAGE value="complete api" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -522,6 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -529,6 +522,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,6 +579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,6 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,6 +603,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -676,6 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,6 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -704,6 +703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8110">
           <caret line="887" column="11" lean-forward="true" selection-start-line="887" selection-start-column="11" selection-end-line="887" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,6 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15300">
           <caret line="900" column="0" lean-forward="true" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
