@@ -8,12 +8,12 @@ $(document).ready(function(){
 		console.log('asdfasdf');
         $.ajax({
 			type: "GET",
-			data:{'username' : 1},
+			data:{'values' : '12,2,5,10,13,8,14,3,2,1','colors':'black,red,red,black,black,black,black,red,red,red'},
 			url: "http://127.0.0.1:5002/employees",
 			dataType: "json",
 			success: function(data){
-				console.log(data.employees);
-				alert(data.employees) // Will alert Max
+				console.log(data.predict);
+				alert(data.predict) // Will alert Max
 			}        
 		});
     });

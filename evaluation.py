@@ -19,13 +19,15 @@ def get_data_label(dataset):
     return data, label
 
 
+# testSet = load_data('test.csv')
 testSet = load_data('test2.csv')
 dataTest, labelTest = get_data_label(testSet)
 from sklearn.naive_bayes import MultinomialNB
 # clf = MultinomialNB()
 # clf.fit(dataTrain, labelTrain)
 from sklearn.externals import joblib
-clf = joblib.load('model.pkl')
+# clf = joblib.load('model.pkl')
+clf = joblib.load('model2.pkl')
 # test = []
 # for i in range(0,10):
 #     test.append(dataTest[i])
@@ -35,17 +37,26 @@ lena = len(y_predicted)
 dicti = {}
 false_before = False
 count_false = 0
+count_true = 0
+print 'total: '+str(len(y_predicted))
 for i in range(0,lena):
-    if y_predicted[i] != labelTest[i] and labelTest[i]!=0:
+    if y_predicted[i] != labelTest[i]:
         if false_before:
             count_false += 1
         else:
             count_false = 1
         false_before = True
     else:
+        count_true += 1
         if false_before:
             if count_false == 7:
-                print i
+                falses = []
+                predicts = []
+                for j in range(0,17):
+                    falses.append(labelTest[i-j])
+                    predicts.append(y_predicted[i-j])
+                print 'falses:   '+str(falses)
+                print 'predicts: '+ str(predicts)
             if count_false in dicti:
                 dicti[count_false] += 1
             else:
@@ -53,7 +64,8 @@ for i in range(0,lena):
         else:
             count_false = 0
         false_before = False
-f2 = open('predict_wrong_continues.txt','w')
+print count_true
+f2 = open('predict_wrong_continues2.txt','w')
 for key,value in dicti.items():
     f2.write(str(key)+' '+str(value)+'\n')
 f2.close()

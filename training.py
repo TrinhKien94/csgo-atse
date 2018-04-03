@@ -36,26 +36,28 @@ def count_feat_color_case(feat_num,feat,color):
 def count_color(color):
     colors[color]+=1
 
-trainingSet = load_data('training.csv')
+# trainingSet = load_data('training.csv')
+trainingSet = load_data('training2.csv')
 dataTrain, labelTrain = get_data_label(trainingSet)
 
-for label in labelTrain:
-    count_color(label)
-lenL = len(labelTrain)
-lenD = len(dataTrain[0])
-for i in range(0, lenL):
-    for j in range(0, lenD):
-        count_feat_color_case(j,dataTrain[i][j],labelTrain[i])
-print colors
-print feat_color
-file = open('feat_color.data','w')
-pickle.dump(feat_color,file)
-file.close()
-file = open('colors.data','w')
-pickle.dump(colors,file)
-file.close()
-# from sklearn.naive_bayes import MultinomialNB
-# clf = MultinomialNB()
-# clf.fit(dataTrain, labelTrain)
-# from sklearn.externals import joblib
+# for label in labelTrain:
+#     count_color(label)
+# lenL = len(labelTrain)
+# lenD = len(dataTrain[0])
+# for i in range(0, lenL):
+#     for j in range(0, lenD):
+#         count_feat_color_case(j,dataTrain[i][j],labelTrain[i])
+# print colors
+# print feat_color
+# file = open('feat_color.data','w')
+# pickle.dump(feat_color,file)
+# file.close()
+# file = open('colors.data','w')
+# pickle.dump(colors,file)
+# file.close()
+from sklearn.naive_bayes import MultinomialNB
+clf = MultinomialNB()
+clf.fit(dataTrain, labelTrain)
+from sklearn.externals import joblib
 # joblib.dump(clf, 'model.pkl', compress=9)
+joblib.dump(clf, 'model2.pkl', compress=9)

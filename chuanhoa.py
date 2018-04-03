@@ -8,7 +8,9 @@ def convert_color(color):
         return '0'
 
 
-with open('test2.txt') as f:
+# with open('test.txt') as f:
+# with open('test2.txt') as f:
+with open('test3.txt') as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 sort_dict = OrderedDict()
@@ -23,19 +25,27 @@ for line in content:
         sort_dict[number]['value'] = elements[2]
     # sort_dict[number] = elements[2]
 reversed_sorted = OrderedDict(sorted(sort_dict.items(), reverse=True))
+print reversed_sorted
 keys = reversed_sorted.keys()
 key_len = len(keys)
-number_before = 10
-extract_number_element_before = key_len - number_before - 100
-data = open('test2.csv','w')
+number_before = 9
+extract_number_element_before = key_len - number_before
+# data = open('test.csv','w')
+# data = open('training.csv','w')
+data = open('test3.csv','w')
 for i in range(0,extract_number_element_before):
     text = convert_color(reversed_sorted[keys[i]]['color'])
     for j in range(i+1,i+number_before):
         text = text + ',' + str(reversed_sorted[keys[j]]['value'])
     for j in range(i+1,i+number_before):
         text = text + ',' + convert_color(reversed_sorted[keys[j]]['color'])
-    count = 0
-
+    count = 1
+    for j in range(i+2, i+11):
+        if reversed_sorted[keys[i+1]]['color'] == reversed_sorted[keys[j]]['color']:
+            count += 1
+        else:
+            break
+    text += ',' + str(count)
     # len = 1
     # if reversed_sorted[keys[i+1]]['color'] != reversed_sorted[keys[i+len+1]]['color']:
     #     for k in range(2,len+1):
