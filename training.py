@@ -37,7 +37,7 @@ def count_color(color):
     colors[color]+=1
 
 # trainingSet = load_data('training.csv')
-trainingSet = load_data('training2.csv')
+trainingSet = load_data('traning.csv')
 dataTrain, labelTrain = get_data_label(trainingSet)
 
 # for label in labelTrain:
@@ -60,4 +60,4 @@ clf = MultinomialNB()
 clf.fit(dataTrain, labelTrain)
 from sklearn.externals import joblib
 # joblib.dump(clf, 'model.pkl', compress=9)
-joblib.dump(clf, 'model2.pkl', compress=9)
+joblib.dump(clf, 'model.pkl', compress=9)

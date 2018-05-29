@@ -66,7 +66,7 @@ class Employees(Resource):
         values = request.args.get('values')
         storeColor=colors.split(",")[0]
         storeValue=values.split(",")[0]
-        storeLog(storeColor+" "+storeValue)
+        # storeLog(storeColor+" "+storeValue)
         print colors
         print values
         features = []
@@ -92,4 +92,4 @@ api.add_resource(Employees_Name, '/employees/<employee_id>') # Route_3
 
 
 if __name__ == '__main__':
-     app.run(port=5002)
+     app.run(port=5003)
