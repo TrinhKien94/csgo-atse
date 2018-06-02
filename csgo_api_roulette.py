@@ -62,10 +62,10 @@ def convert_data_color(colors):
 
 class Employees(Resource):
     def get(self):
-        option = request.args.get('option')
-        profit =request.args.get('profit')
+        color = request.args.get('color')
+        value =request.args.get('value')
         prev = request.args.get('prev')
-        log = option + "|" + profit + "|" + prev
+        log = color + "|" + value + "|" + prev
         log = log.replace(",","")
         print log
         storeLog(log)
@@ -100,4 +100,4 @@ api.add_resource(Employees_Name, '/employees/<employee_id>') # Route_3
 
 
 if __name__ == '__main__':
-     app.run(port=5003)
+     app.run(port=5001)
