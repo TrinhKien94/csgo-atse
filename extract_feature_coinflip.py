@@ -15,13 +15,13 @@ def get_data_label(dataset):
     data = []
     label = []
     for x in dataset:
-        data.append(x[2::2])
+        data.append(x[2:])
         label.append(x[0])
     return data, label
 
 
 # testSet = load_data('test.csv')
-testSet = load_data('data_normalized.txt')
+testSet = load_data('log20160602.txt')
 dataTest, labelTest = get_data_label(testSet)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_size=0.33)
@@ -29,11 +29,16 @@ X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_si
 # clf = MultinomialNB()
 # clf.fit(X_train, y_train)
 # y_pred = clf.predict(X_test)
-from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
-knn.fit(X_train, y_train)
-from sklearn.externals import joblib
-joblib.dump(knn, 'model-coinflip.pkl')
-y_pred = knn.predict(X_test)
+# from sklearn.neighbors import KNeighborsClassifier
+# knn = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
+# knn.fit(X_train, y_train)
+# from sklearn.externals import joblib
+# joblib.dump(knn, 'model-coinflip.pkl')
+# y_pred = knn.predict(X_test)
+# Load scikit's random forest classifier library
+from sklearn.ensemble import RandomForestClassifier
+clf = RandomForestClassifier(n_jobs=2, random_state=0)
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
 from sklearn.metrics import accuracy_score
 print("Accuracy of NB: %.2f %%" %(100*accuracy_score(y_test, y_pred)))
