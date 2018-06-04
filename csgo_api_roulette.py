@@ -67,7 +67,7 @@ class Employees(Resource):
         prev = request.args.get('prev')
         log = color + "|" + value + "|" + prev
         log = log.replace(",","")
-        print log
+        print(log)
         storeLog(log)
         # colors = request.args.get('colors')
         # values = request.args.get('values')

@@ -4,7 +4,7 @@ from json import dumps
 from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
-clf = joblib.load('model.pkl')
+clf = joblib.load('model-coinflip.pkl')
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
@@ -69,8 +69,14 @@ class Employees(Resource):
         log = log.replace(",","")
         log = log.replace("\n", "")
         log = log.replace("\s", "")
-        print log
+        print("LOG: "+log)
         storeLog(log)
+        inputStr = log.split('|')
+        inputStr = inputStr[:len(inputStr)-2]
+        inputStr = [int(x) for x in inputStr]
+        features = []
+        features.append(inputStr)
+        print("predict: "+ str(clf.predict(features)))
         # colors = request.args.get('colors')
         # values = request.args.get('values')
         # storeColor=colors.split(",")[0]
@@ -83,7 +89,8 @@ class Employees(Resource):
         # print features[0]
         # print "? "+str(clf.predict_proba(features)[0])
         # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
-        return {'predict': 'ok'} # Fetches first column that is Employee ID
+        # return {'predict': clf.predict(features)} # Fetches first column that is Employee ID
+        return {'predict': str(clf.predict(features))}
 
 class Tracks(Resource):
     def get(self):
