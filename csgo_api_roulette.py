@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 api = Api(app)
 def storeLog(log):
-   hs = open("log20160602.txt","a")
+   hs = open("log20160602-roulette.txt","a")
    hs.write(log+ "\n")
    hs.close()
 
