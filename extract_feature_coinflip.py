@@ -42,3 +42,5 @@ clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 from sklearn.metrics import accuracy_score
 print("Accuracy of NB: %.2f %%" %(100*accuracy_score(y_test, y_pred)))
+from sklearn.externals import joblib
+joblib.dump(clf, 'model-coinflip.pkl')
