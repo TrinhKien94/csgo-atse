@@ -12,7 +12,6 @@ def convert_1_2(number):
         return '2'
     if number == '2':
         return '1'
-
 # with open('test.txt') as f:
 # with open('test2.txt') as f:
 with open('log20160602.txt') as f:

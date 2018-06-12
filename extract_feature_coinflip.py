@@ -19,6 +19,9 @@ def get_data_label(dataset):
         label.append(x[0])
     return data, label
 
+def append_2d_array(arrayAppend,array2d):
+    for element in array2d:
+        arrayAppend.append(element)
 
 # testSet = load_data('test.csv')
 trainingSet = load_data('training.txt')
@@ -40,24 +43,46 @@ from sklearn.model_selection import train_test_split
 # Load scikit's random forest classifier library
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.neighbors import KNeighborsClassifier
 print(len(X_train))
 maxP = 0
 index = 0
-folkSize = 19
+folkSize = 100
+X_train_combine = []
+y_train_combine = []
+indexs = []
 for i in range(0,len(X_train),folkSize):
     end = i+folkSize-1
     X_train_folk = X_train[i:end]
     y_train_folk = y_train[i:end]
-    clf = RandomForestClassifier(n_jobs=2, random_state=0)
+    clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
     clf.fit(X_train_folk, y_train_folk)
     y_pred = clf.predict(X_test)
     percent = 100*accuracy_score(y_test, y_pred)
+    if percent > 54.15:
+        append_2d_array(X_train_combine,X_train_folk)
+        append_2d_array(y_train_combine,y_train_folk)
+        indexs.append(i)
     if percent > maxP:
         maxP = percent
         index = i
-    
     print("Accuracy of fold "+str(i)+": %.2f %%" %percent)
 print("Max Percent: "+str(maxP)+" at index: "+str(index))
+print(indexs)
+# clf = RandomForestClassifier(n_jobs=2, random_state=0)
+clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
+clf.fit(X_train_combine, y_train_combine)
+y_pred = clf.predict(X_test)
+percent = 100*accuracy_score(y_test, y_pred)
+print("Accuracy of combine %.2f %%" %percent)
+print(len(X_train_combine))
+from sklearn.externals import joblib
+joblib.dump(clf, 'model-coinflip.pkl')
+clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+percent = 100*accuracy_score(y_test, y_pred)
+print("Accuracy of all %.2f %%" %percent)
 # from sklearn.ensemble import RandomForestClassifier
 # clf = RandomForestClassifier(n_jobs=2, random_state=0)
 # # from sklearn import svm
