@@ -24,7 +24,7 @@ def get_data_label(dataset):
 trainingSet = load_data('training.txt')
 testSet = load_data('testing.txt')
 X_train, y_train = get_data_label(trainingSet)
-X_test, y_test = get_data_label(trainingSet)
+X_test, y_test = get_data_label(testSet)
 from sklearn.model_selection import train_test_split
 # X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_size=0.33)
 # from sklearn.naive_bayes import MultinomialNB
@@ -39,10 +39,35 @@ from sklearn.model_selection import train_test_split
 # y_pred = knn.predict(X_test)
 # Load scikit's random forest classifier library
 from sklearn.ensemble import RandomForestClassifier
-clf = RandomForestClassifier(n_jobs=2, random_state=0)
-clf.fit(X_train, y_train)
-y_pred = clf.predict(X_test)
 from sklearn.metrics import accuracy_score
-print("Accuracy of NB: %.2f %%" %(100*accuracy_score(y_test, y_pred)))
-from sklearn.externals import joblib
-joblib.dump(clf, 'model-coinflip.pkl')
+print(len(X_train))
+maxP = 0
+index = 0
+folkSize = 19
+for i in range(0,len(X_train),folkSize):
+    end = i+folkSize-1
+    X_train_folk = X_train[i:end]
+    y_train_folk = y_train[i:end]
+    clf = RandomForestClassifier(n_jobs=2, random_state=0)
+    clf.fit(X_train_folk, y_train_folk)
+    y_pred = clf.predict(X_test)
+    percent = 100*accuracy_score(y_test, y_pred)
+    if percent > maxP:
+        maxP = percent
+        index = i
+    
+    print("Accuracy of fold "+str(i)+": %.2f %%" %percent)
+print("Max Percent: "+str(maxP)+" at index: "+str(index))
+# from sklearn.ensemble import RandomForestClassifier
+# clf = RandomForestClassifier(n_jobs=2, random_state=0)
+# # from sklearn import svm
+# # clf = svm.SVC()
+# # clf.fit(X_train, y_train)
+# # from sklearn import tree
+# # clf = tree.DecisionTreeClassifier()
+# clf.fit(X_train, y_train)
+# y_pred = clf.predict(X_test)
+# from sklearn.metrics import accuracy_score
+# print("Accuracy of NB: %.2f %%" %(100*accuracy_score(y_test, y_pred)))
+# from sklearn.externals import joblib
+# joblib.dump(clf, 'model-coinflip.pkl')
