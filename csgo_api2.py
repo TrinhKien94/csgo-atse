@@ -76,7 +76,8 @@ class Employees(Resource):
         inputStr = [int(x) for x in inputStr]
         features = []
         features.append(inputStr)
-        print("predict: "+ str(clf.predict(features)))
+        predict = str(clf.predict(features)[0])
+        print(predict)
         # colors = request.args.get('colors')
         # values = request.args.get('values')
         # storeColor=colors.split(",")[0]
@@ -90,7 +91,7 @@ class Employees(Resource):
         # print "? "+str(clf.predict_proba(features)[0])
         # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
         # return {'predict': clf.predict(features)} # Fetches first column that is Employee ID
-        return {'predict': str(clf.predict(features))}
+        return {'predict': predict}
 
 class Tracks(Resource):
     def get(self):

@@ -21,7 +21,7 @@ def get_data_label(dataset):
 
 
 # testSet = load_data('test.csv')
-testSet = load_data('log20160602.txt')
+testSet = load_data('data_normalized.txt')
 dataTest, labelTest = get_data_label(testSet)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_size=0.33)
