@@ -15,16 +15,18 @@ def get_data_label(dataset):
     data = []
     label = []
     for x in dataset:
-        data.append(x[2:])
+        data.append(x[2::2])
         label.append(x[0])
     return data, label
 
 
 # testSet = load_data('test.csv')
-testSet = load_data('data_normalized.txt')
-dataTest, labelTest = get_data_label(testSet)
+trainingSet = load_data('training.txt')
+testSet = load_data('testing.txt')
+X_train, y_train = get_data_label(trainingSet)
+X_test, y_test = get_data_label(trainingSet)
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_size=0.33)
+# X_train, X_test, y_train, y_test = train_test_split(dataTest, labelTest, test_size=0.33)
 # from sklearn.naive_bayes import MultinomialNB
 # clf = MultinomialNB()
 # clf.fit(X_train, y_train)

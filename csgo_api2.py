@@ -13,6 +13,17 @@ def storeLog(log):
    hs.write(log+ "\n")
    hs.close()
 
+def storeLogPredict(predict):
+   hs = open("predict.txt","a")
+   hs.write(predict+" ")
+   hs.close()
+
+
+def storeLogTruth(predict):
+   hs = open("predict.txt","a")
+   hs.write(predict+'\n')
+   hs.close()
+
 def convert_color(color):
     if color == 'red':
         return 2
@@ -60,6 +71,13 @@ def convert_data_color(colors):
         converted_colors.append(convert_color(color))
     return converted_colors
 
+def convert_1_2(number):
+    if number == '1':
+        return '2'
+    if number == '2':
+        return '1'
+
+
 class Employees(Resource):
     def get(self):
         option = request.args.get('option')
@@ -75,9 +93,14 @@ class Employees(Resource):
         inputStr = inputStr[:len(inputStr)-2]
         inputStr = [int(x) for x in inputStr]
         features = []
-        features.append(inputStr)
+        features.append(inputStr[0::2])
         predict = str(clf.predict(features)[0])
         print(predict)
+        if int(profit) < 0:
+            storeLogTruth(convert_1_2(option))
+        else:
+            storeLogTruth(option)
+        storeLogPredict(predict)
         # colors = request.args.get('colors')
         # values = request.args.get('values')
         # storeColor=colors.split(",")[0]
