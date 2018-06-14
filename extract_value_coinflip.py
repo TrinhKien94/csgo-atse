@@ -25,12 +25,12 @@ sort_dict = OrderedDict()
 count = len(content)-1
 # contentNormalized = []
 log = {}
-for i in range(count,0,-1):
+for i in range(0,len(content),1):
     datas = content[i].split('|')
     storeLog('|'.join(datas[0::2]))
     if int(datas[1]) == 195000:
         storeLog1950('|'.join(datas[0::2]))
-        
+        print(content[i])
 #         if datas[1] in log:
 #             log[datas[1]]+=1
 #         else:

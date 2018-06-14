@@ -4,12 +4,18 @@ from json import dumps
 from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
+import datetime
 clf = joblib.load('model-coinflip.pkl')
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
 def storeLog(log):
    hs = open("log20160602.txt","a")
+   hs.write(log+ "\n")
+   hs.close()
+
+def storeLogBunny(log):
+   hs = open("bunny.txt","a")
    hs.write(log+ "\n")
    hs.close()
 
@@ -88,6 +94,7 @@ class Employees(Resource):
         log = log.replace("\n", "")
         log = log.replace("\s", "")
         storeLog(log)
+        steamId= request.args.get('steam_id')
         if int(profit) < 0:
              option = convert_1_2(option)
         log = option + "|" + profit + "|" + prev
@@ -95,6 +102,10 @@ class Employees(Resource):
         log = log.replace("\n", "")
         log = log.replace("\s", "")
         inputStr = log.split('|')
+        if steamId == '76561198052823882':
+            time = str(datetime.datetime.now())
+            log = time +"|"+log
+            storeLogBunny(log)
         print("|".join(inputStr[0::2]))
         inputStr = inputStr[:len(inputStr)-2]
         inputStr = [int(x) for x in inputStr]
