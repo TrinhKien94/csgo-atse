@@ -87,9 +87,15 @@ class Employees(Resource):
         log = log.replace(",","")
         log = log.replace("\n", "")
         log = log.replace("\s", "")
-        print("LOG: "+log)
         storeLog(log)
+        if int(profit) < 0:
+             option = convert_1_2(option)
+        log = option + "|" + profit + "|" + prev
+        log = log.replace(",","")
+        log = log.replace("\n", "")
+        log = log.replace("\s", "")
         inputStr = log.split('|')
+        print("|".join(inputStr[0::2]))
         inputStr = inputStr[:len(inputStr)-2]
         inputStr = [int(x) for x in inputStr]
         features = []
