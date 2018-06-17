@@ -4,12 +4,18 @@ from json import dumps
 from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
+import datetime
 clf = joblib.load('model-coinflip.pkl')
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
 def storeLog(log):
    hs = open("log20160602.txt","a")
+   hs.write(log+ "\n")
+   hs.close()
+
+def storeLogBunny(log):
+   hs = open("bunny.txt","a")
    hs.write(log+ "\n")
    hs.close()
 
@@ -77,6 +83,19 @@ def convert_1_2(number):
     if number == '2':
         return '1'
 
+def storeLogPercent(log,filename):
+   hs = open(filename,"w")
+   hs.write(log)
+   hs.close()
+
+def readLogPercent(filename):
+    hs = open(filename, "r")
+    line = hs.readline()
+    data = line.split('|')
+    hs.close()
+    if len(data) < 2 or data[1]=='0':
+        return 0, 0
+    return int(data[0]), int(data[1])
 
 class Employees(Resource):
     def get(self):
@@ -87,9 +106,28 @@ class Employees(Resource):
         log = log.replace(",","")
         log = log.replace("\n", "")
         log = log.replace("\s", "")
-        print("LOG: "+log)
         storeLog(log)
+        steamId= request.args.get('steam_id')
+        if int(profit) < 0:
+             option = convert_1_2(option)
+        log = option + "|" + profit + "|" + prev
+        log = log.replace(",","")
+        log = log.replace("\n", "")
+        log = log.replace("\s", "")
         inputStr = log.split('|')
+        if steamId == '76561198052823882':
+            time = str(datetime.datetime.now())
+            log = time +"|"+log
+            storeLogBunny(log)
+        win, total = readLogPercent("percent.txt")
+        if int(profit) > 0:
+            win+=1
+        total+=1
+        percent = 0
+        if total!=0:
+            percent = 100.0 * float(win) / float(total)
+        storeLogPercent(str(win)+"|"+str(total),"percent.txt")
+        print("|".join(inputStr[0::2]))
         inputStr = inputStr[:len(inputStr)-2]
         inputStr = [int(x) for x in inputStr]
         features = []
@@ -114,7 +152,7 @@ class Employees(Resource):
         # print "? "+str(clf.predict_proba(features)[0])
         # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
         # return {'predict': clf.predict(features)} # Fetches first column that is Employee ID
-        return {'predict': predict}
+        return {'predict': predict,'percent':percent,"total":total}
 
 class Tracks(Resource):
     def get(self):
