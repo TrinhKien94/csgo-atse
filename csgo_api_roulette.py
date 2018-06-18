@@ -5,6 +5,7 @@ from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
 clf = joblib.load('model.pkl')
+
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
@@ -12,7 +13,10 @@ def storeLog(log):
    hs = open("log20160602-roulette.txt","a")
    hs.write(log+ "\n")
    hs.close()
-
+def storeLogPercent(log,filename):
+   hs = open(filename,"a")
+   hs.write(log+ "\n")
+   hs.close()
 def convert_color(color):
     if color == 'red':
         return 2

@@ -23,6 +23,8 @@ def append_2d_array(arrayAppend,array2d):
     for element in array2d:
         arrayAppend.append(element)
 
+
+
 # testSet = load_data('test.csv')
 trainingSet = load_data('training.txt')
 testSet = load_data('testing.txt')
@@ -124,8 +126,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.neural_network import MLPClassifier
-clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
-# clf = RandomForestClassifier(n_jobs=4, random_state=0,max_depth = 10,max_features =9, min_samples_split= 10,warm_start=True)
+# clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
+clf = RandomForestClassifier(n_jobs=4, random_state=0,max_depth = 10,max_features =10, min_samples_split= 4000,warm_start=True)
 # clf = MultinomialNB()
 # clf = MLPClassifier(hidden_layer_sizes=(15,), random_state=1, max_iter=1, warm_start=True)
 clf.fit(X_train, y_train)
