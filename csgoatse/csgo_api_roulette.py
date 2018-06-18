@@ -4,8 +4,12 @@ from json import dumps
 from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
+<<<<<<< HEAD:csgoatse/csgo_api_roulette.py
+clf = joblib.load('model-roulette.pkl')
+=======
 clf = joblib.load('model.pkl')
 
+>>>>>>> 0b5cb275e7ed7a7e7f946f4767745421153195cb:csgo_api_roulette.py
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
@@ -19,15 +23,15 @@ def storeLogPercent(log,filename):
    hs.close()
 def convert_color(color):
     if color == 'red':
-        return 2
-    if color == 'black':
         return 1
+    if color == 'black':
+        return 2
     if color == 'green':
         return 0
 def convert_number_to_color(number):
-    if number == 2:
-        return 'red'
     if number == 1:
+        return 'red'
+    if number == 2:
         return 'black'
     if number == 0:
         return 'green'
@@ -71,8 +75,20 @@ class Employees(Resource):
         prev = request.args.get('prev')
         log = color + "|" + value + "|" + prev
         log = log.replace(",","")
-        print(log)
+        # print(log)
         storeLog(log)
+        # log = log.replace("black\|\|green\|\|red\|","")
+        log = log.replace("black","2")
+        log = log.replace("red","1")
+        log = log.replace("green","0")
+        log = log.replace("2||0||1||","")
+        print(log)
+        inputStr = log.split('|')
+        inputStr = inputStr[:len(inputStr)-2]
+        inputStr = [int(x) for x in inputStr]
+        features = []
+        features.append(inputStr[0::2])
+        predict = str(clf.predict(features)[0])
         # colors = request.args.get('colors')
         # values = request.args.get('values')
         # storeColor=colors.split(",")[0]
@@ -85,7 +101,7 @@ class Employees(Resource):
         # print features[0]
         # print "? "+str(clf.predict_proba(features)[0])
         # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
-        return {'predict': 'ok'} # Fetches first column that is Employee ID
+        return {'predict': predict} # Fetches first column that is Employee ID
 
 class Tracks(Resource):
     def get(self):
