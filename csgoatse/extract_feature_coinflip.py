@@ -15,7 +15,7 @@ def get_data_label(dataset):
     data = []
     label = []
     for x in dataset:
-        data.append(x[2::2])
+        data.append(x[2:])
         label.append(x[0])
     return data, label
 
@@ -126,8 +126,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.neural_network import MLPClassifier
-# clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
-clf = RandomForestClassifier(n_jobs=4, random_state=0,max_depth = 10,max_features =10, min_samples_split= 4000,warm_start=True)
+clf = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',metric_params=None, n_jobs=1, n_neighbors=15, p=2,weights='uniform')
+# clf = RandomForestClassifier(n_jobs=4, random_state=0,max_depth = 10,max_features =10, min_samples_split= 4000,warm_start=True)
 # clf = MultinomialNB()
 # clf = MLPClassifier(hidden_layer_sizes=(15,), random_state=1, max_iter=1, warm_start=True)
 clf.fit(X_train, y_train)
@@ -138,12 +138,12 @@ from sklearn.externals import joblib
 from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
 joblib.dump(clf, 'model-coinflip.pkl')
-loseLog = [0]*30
+loseLog = [0]*100
 count = 0
 for i in range(0,len(y_test)):
-    if y_test[i]!=y_pred[i]:
+    if y_test[i]!=y_pred[i] and (y_pred[i]==1.0 or y_pred[i]==2.0):
         count+=1
-    else:
+    if y_test[i]==y_pred[i] and (y_pred[i]==1.0 or y_pred[i]==2.0):
         loseLog[count]+=1
         count = 0
 print(loseLog)

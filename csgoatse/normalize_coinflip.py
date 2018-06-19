@@ -9,9 +9,9 @@ def convert_color(color):
 
 def convert_1_2(number):
     if number == '1':
-        return '2'
+        return '3'
     if number == '2':
-        return '1'
+        return '4'
 # with open('test.txt') as f:
 # with open('test2.txt') as f:
 with open('log20160602.txt') as f:
