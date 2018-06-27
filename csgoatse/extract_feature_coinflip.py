@@ -15,7 +15,7 @@ def get_data_label(dataset):
     data = []
     label = []
     for x in dataset:
-        data.append(x[2:])
+        data.append(x[2::2])
         label.append(x[0])
     return data, label
 
