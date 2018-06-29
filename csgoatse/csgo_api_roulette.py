@@ -4,12 +4,7 @@ from json import dumps
 from flask import jsonify
 from flask_cors import CORS
 from sklearn.externals import joblib
-<<<<<<< HEAD:csgoatse/csgo_api_roulette.py
 clf = joblib.load('model-roulette.pkl')
-=======
-clf = joblib.load('model.pkl')
-
->>>>>>> 0b5cb275e7ed7a7e7f946f4767745421153195cb:csgo_api_roulette.py
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
