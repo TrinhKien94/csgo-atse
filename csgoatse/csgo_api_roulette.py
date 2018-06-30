@@ -63,6 +63,15 @@ def convert_data_color(colors):
         converted_colors.append(convert_color(color))
     return converted_colors
 
+def storeLogPredict(predict):
+   hs = open("predict-roulette.txt","a")
+   hs.write(predict+" ")
+   hs.close()
+def storeLogTruth(predict):
+   hs = open("predict-roulette.txt","a")
+   hs.write(predict+'\n')
+   hs.close()
+
 class Employees(Resource):
     def get(self):
         color = request.args.get('color')
@@ -82,8 +91,11 @@ class Employees(Resource):
         inputStr = inputStr[:len(inputStr)-2]
         inputStr = [int(x) for x in inputStr]
         features = []
-        features.append(inputStr[0::2])
+        features.append(inputStr[0:])
         predict = str(clf.predict(features)[0])
+        print(predict)
+        storeLogTruth(str(inputStr[0]))
+        storeLogPredict(str(predict))
         # colors = request.args.get('colors')
         # values = request.args.get('values')
         # storeColor=colors.split(",")[0]

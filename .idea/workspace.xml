@@ -7,86 +7,10 @@
       <change beforePath="$PROJECT_DIR$/csgoatse/csgo_api_roulette.py" afterPath="$PROJECT_DIR$/csgoatse/csgo_api_roulette.py" />
       <change beforePath="$PROJECT_DIR$/csgoatse/data_normalized.txt" afterPath="$PROJECT_DIR$/csgoatse/data_normalized.txt" />
       <change beforePath="$PROJECT_DIR$/csgoatse/evaluation_coinflip.py" afterPath="$PROJECT_DIR$/csgoatse/evaluation_coinflip.py" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/extract_feature_coinflip.py" afterPath="$PROJECT_DIR$/csgoatse/extract_feature_coinflip.py" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/extract_feature_roulette.py" afterPath="$PROJECT_DIR$/csgoatse/extract_feature_roulette.py" />
       <change beforePath="$PROJECT_DIR$/csgoatse/log20160602-roulette.txt" afterPath="$PROJECT_DIR$/csgoatse/log20160602-roulette.txt" />
       <change beforePath="$PROJECT_DIR$/csgoatse/log20160602.txt" afterPath="$PROJECT_DIR$/csgoatse/log20160602.txt" />
+      <change beforePath="$PROJECT_DIR$/csgoatse/model-coinflip.pkl" afterPath="$PROJECT_DIR$/csgoatse/model-coinflip.pkl" />
       <change beforePath="$PROJECT_DIR$/csgoatse/model-roulette.pkl" afterPath="$PROJECT_DIR$/csgoatse/model-roulette.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-0.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-0.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-1.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-1.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-10.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-10.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-11.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-11.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-12.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-12.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-13.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-13.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-14.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-14.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-15.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-15.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-16.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-16.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-17.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-17.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-18.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-18.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-19.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-19.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-2.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-2.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-20.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-20.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-21.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-21.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-22.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-22.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-23.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-23.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-24.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-24.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-25.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-25.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-26.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-26.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-27.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-27.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-28.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-28.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-29.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-29.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-3.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-3.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-30.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-30.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-31.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-31.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-32.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-32.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-33.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-33.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-34.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-34.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-35.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-35.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-36.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-36.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-37.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-37.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-38.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-38.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-39.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-39.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-4.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-4.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-40.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-40.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-41.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-41.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-42.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-42.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-43.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-43.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-44.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-44.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-45.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-45.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-46.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-46.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-47.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-47.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-48.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-48.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-49.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-49.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-5.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-5.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-50.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-50.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-51.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-51.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-52.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-52.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-53.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-53.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-54.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-54.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-55.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-55.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-56.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-56.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-57.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-57.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-58.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-58.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-59.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-59.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-6.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-6.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-60.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-60.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-61.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-61.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-62.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-62.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-63.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-63.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-64.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-64.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-65.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-65.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-66.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-66.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-67.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-67.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-68.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-68.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-69.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-69.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-7.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-7.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-70.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-70.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-71.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-71.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-72.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-72.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-73.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-73.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-74.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-74.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-8.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-8.pkl" />
-      <change beforePath="$PROJECT_DIR$/csgoatse/models/model-roulette-9.pkl" afterPath="$PROJECT_DIR$/csgoatse/models/model-roulette-9.pkl" />
       <change beforePath="$PROJECT_DIR$/csgoatse/percent.txt" afterPath="$PROJECT_DIR$/csgoatse/percent.txt" />
       <change beforePath="$PROJECT_DIR$/csgoatse/predict.txt" afterPath="$PROJECT_DIR$/csgoatse/predict.txt" />
       <change beforePath="$PROJECT_DIR$/csgoatse/testing.txt" afterPath="$PROJECT_DIR$/csgoatse/testing.txt" />
@@ -101,41 +25,29 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/csgo_atse$normalize_coinflip__1_.coverage" NAME="normalize_coinflip (1) Coverage Results" MODIFIED="1530198528895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
-    <SUITE FILE_PATH="coverage/csgo_atse$extract_feature_roulette.coverage" NAME="extract_feature_roulette Coverage Results" MODIFIED="1530210769087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
+    <SUITE FILE_PATH="coverage/csgo_atse$extract_feature_roulette.coverage" NAME="extract_feature_roulette Coverage Results" MODIFIED="1530294269961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
     <SUITE FILE_PATH="coverage/csgo_atse$csgo_api.coverage" NAME="csgo_api Coverage Results" MODIFIED="1527357311272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/csgo_atse$normalize_coinflip.coverage" NAME="normalize_coinflip Coverage Results" MODIFIED="1528984091327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/csgo_atse$evaluation_coinflip.coverage" NAME="evaluation_coinflip Coverage Results" MODIFIED="1530210881332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
-    <SUITE FILE_PATH="coverage/csgo_atse$csgo_api2.coverage" NAME="csgo_api2 Coverage Results" MODIFIED="1528984967111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/csgo_atse$normalize_coinflip.coverage" NAME="normalize_coinflip Coverage Results" MODIFIED="1530290512242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
+    <SUITE FILE_PATH="coverage/csgo_atse$evaluation_coinflip.coverage" NAME="evaluation_coinflip Coverage Results" MODIFIED="1530322413788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
+    <SUITE FILE_PATH="coverage/csgo_atse$csgo_api2.coverage" NAME="csgo_api2 Coverage Results" MODIFIED="1530290690322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
     <SUITE FILE_PATH="coverage/csgo_atse$get_captcha_csgoatse.coverage" NAME="get_captcha_csgoatse Coverage Results" MODIFIED="1527341604136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1522565981472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$training.coverage" NAME="training Coverage Results" MODIFIED="1527426116697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/csgo_atse$extract_feature_coinflip.coverage" NAME="extract_feature_coinflip Coverage Results" MODIFIED="1528984164110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$csgo_api2__1_.coverage" NAME="csgo_api2 (1) Coverage Results" MODIFIED="1530198778952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
+    <SUITE FILE_PATH="coverage/csgo_atse$extract_feature_coinflip.coverage" NAME="extract_feature_coinflip Coverage Results" MODIFIED="1530290664765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
     <SUITE FILE_PATH="coverage/csgo_atse$save_img_from_url.coverage" NAME="save_img_from_url Coverage Results" MODIFIED="1525613050106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$extract_value_coinflip.coverage" NAME="extract_value_coinflip Coverage Results" MODIFIED="1528985955769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$chuanhoa.coverage" NAME="chuanhoa Coverage Results" MODIFIED="1527426111290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csgo_atse$extract_feature_coinflip__1_.coverage" NAME="extract_feature_coinflip (1) Coverage Results" MODIFIED="1530208021032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
-    <SUITE FILE_PATH="coverage/csgo_atse$csgo_api_roulette.coverage" NAME="csgo_api_roulette Coverage Results" MODIFIED="1530208074724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
+    <SUITE FILE_PATH="coverage/csgo_atse$csgo_api_roulette.coverage" NAME="csgo_api_roulette Coverage Results" MODIFIED="1530294785873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csgoatse" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="extract_feature_coinflip.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_coinflip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="140" column="17" lean-forward="false" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="csgo_api2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="69">
+              <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="137" selection-end-column="32" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -143,11 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="percent.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csgoatse/percent.txt">
+      <file leaf-file-name="csgo_api_roulette.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api_roulette.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="predict-roulette.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csgoatse/predict-roulette.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -156,8 +78,28 @@
       <file leaf-file-name="predict.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csgoatse/predict.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="7821" column="0" lean-forward="false" selection-start-line="7821" selection-start-column="0" selection-end-line="7821" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="3071" column="4" lean-forward="false" selection-start-line="3071" selection-start-column="4" selection-end-line="3071" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_normalized.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csgoatse/data_normalized.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="44932" column="65" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58269" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract_feature_roulette.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_roulette.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="173" column="38" lean-forward="false" selection-start-line="173" selection-start-column="38" selection-end-line="173" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -166,33 +108,9 @@
       <file leaf-file-name="evaluation_coinflip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csgoatse/evaluation_coinflip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+            <state relative-caret-position="125">
+              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csgo_api_roulette.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api_roulette.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="66" column="18" lean-forward="false" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extract_feature_roulette.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_roulette.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="186" column="23" lean-forward="false" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -200,8 +118,8 @@
       <file leaf-file-name="log20160602-roulette.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csgoatse/log20160602-roulette.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="9987" column="0" lean-forward="false" selection-start-line="8999" selection-start-column="0" selection-end-line="10585" selection-end-column="0" />
+            <state relative-caret-position="-1190">
+              <caret line="10588" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12408" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -210,8 +128,18 @@
       <file leaf-file-name="training.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csgoatse/training.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="8999" column="0" lean-forward="false" selection-start-line="8999" selection-start-column="0" selection-end-line="8999" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="11214" column="0" lean-forward="false" selection-start-line="11214" selection-start-column="0" selection-end-line="11272" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testing.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csgoatse/testing.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -236,14 +164,12 @@
       <find>&quot;&gt;&lt;span class=&quot;value&quot;&gt;</find>
       <find>&lt;/span&gt;&lt;/div&gt;</find>
       <find>753780</find>
-      <find>black</find>
       <find>mega</find>
       <find>probably</find>
       <find>OrderDict</find>
       <find>dataTrain</find>
       <find>green</find>
       <find>convert_color</find>
-      <find>red</find>
       <find>g [0-9]+\S\n</find>
       <find>test3.csv</find>
       <find>employees</find>
@@ -251,7 +177,12 @@
       <find>print</find>
       <find>store</find>
       <find>black||green||red||</find>
+      <find>2|-500||</find>
+      <find>red</find>
+      <find>black</find>
       <find>||</find>
+      <find>storeLogTruth</find>
+      <find>storeLogPredict</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -259,6 +190,7 @@
       <replace>b</replace>
       <replace>r</replace>
       <replace>g</replace>
+      <replace>2</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Kien-Vaio\csgo-atse</dir>
@@ -301,13 +233,16 @@
         <option value="$PROJECT_DIR$/csgo_api2.py" />
         <option value="$PROJECT_DIR$/value1950.txt" />
         <option value="$PROJECT_DIR$/bunny.txt" />
-        <option value="$PROJECT_DIR$/csgoatse/evaluation_coinflip.py" />
-        <option value="$PROJECT_DIR$/csgoatse/testing.txt" />
-        <option value="$PROJECT_DIR$/csgoatse/training.txt" />
-        <option value="$PROJECT_DIR$/csgoatse/log20160602-roulette.txt" />
-        <option value="$PROJECT_DIR$/csgoatse/csgo_api_roulette.py" />
         <option value="$PROJECT_DIR$/csgoatse/extract_feature_coinflip.py" />
         <option value="$PROJECT_DIR$/csgoatse/extract_feature_roulette.py" />
+        <option value="$PROJECT_DIR$/csgoatse/log20160602.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/data_normalized.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/predict.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/log20160602-roulette.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/training.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/testing.txt" />
+        <option value="$PROJECT_DIR$/csgoatse/csgo_api_roulette.py" />
+        <option value="$PROJECT_DIR$/csgoatse/evaluation_coinflip.py" />
       </list>
     </option>
   </component>
@@ -338,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,6 +289,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -384,7 +319,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.evaluation_coinflip">
-    <configuration name="csgo_api2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="csgo_api2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -441,7 +376,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="extract_feature_coinflip (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="extract_feature_coinflip" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -480,19 +415,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.extract_feature_coinflip (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.csgo_api2 (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.evaluation_coinflip" />
+      <item index="0" class="java.lang.String" itemvalue="Python.evaluation_coinflip" />
+      <item index="1" class="java.lang.String" itemvalue="Python.csgo_api2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.extract_feature_coinflip" />
       <item index="3" class="java.lang.String" itemvalue="Python.csgo_api_roulette" />
       <item index="4" class="java.lang.String" itemvalue="Python.extract_feature_roulette" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.evaluation_coinflip" />
-        <item index="1" class="java.lang.String" itemvalue="Python.extract_feature_roulette" />
-        <item index="2" class="java.lang.String" itemvalue="Python.csgo_api_roulette" />
-        <item index="3" class="java.lang.String" itemvalue="Python.extract_feature_coinflip (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.csgo_api2 (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.csgo_api_roulette" />
+        <item index="2" class="java.lang.String" itemvalue="Python.extract_feature_roulette" />
+        <item index="3" class="java.lang.String" itemvalue="Python.csgo_api2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.extract_feature_coinflip" />
       </list>
     </recent_temporary>
   </component>
@@ -522,14 +457,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.008052709" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="554" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31472868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31472868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,304 +499,43 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv2/Lib/site-packages/sklearn/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1910">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict_wrong_continues.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="891" column="0" lean-forward="true" selection-start-line="891" selection-start-column="0" selection-end-line="891" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="589" column="0" lean-forward="true" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8110">
-          <caret line="887" column="11" lean-forward="true" selection-start-line="887" selection-start-column="11" selection-end-line="887" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15300">
-          <caret line="900" column="0" lean-forward="true" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15062">
-          <caret line="886" column="8" lean-forward="false" selection-start-line="886" selection-start-column="8" selection-end-line="886" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14875">
-          <caret line="875" column="42" lean-forward="false" selection-start-line="875" selection-start-column="42" selection-end-line="875" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict_wrong_continues2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/save_img_from_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="2" column="24181" lean-forward="false" selection-start-line="2" selection-start-column="24181" selection-end-line="2" selection-end-column="24181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/call_get_captcha.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_captcha_csgoatse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/26-05-2018.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="10" lean-forward="false" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_feature_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/26-05-2018-2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traning.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chuanhoa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgo_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/27-05-2018.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47175">
-          <caret line="2775" column="0" lean-forward="false" selection-start-line="2775" selection-start-column="0" selection-end-line="2775" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46580">
-          <caret line="2740" column="5" lean-forward="false" selection-start-line="2740" selection-start-column="5" selection-end-line="2740" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log20160602-roulette.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41004">
-          <caret line="2412" column="18" lean-forward="false" selection-start-line="2412" selection-start-column="18" selection-end-line="2412" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log20160602.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73695">
-          <caret line="4335" column="0" lean-forward="false" selection-start-line="4335" selection-start-column="0" selection-end-line="4335" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/normalize_coinflip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_normalized.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576385">
-          <caret line="33905" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37315" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634355">
-          <caret line="37315" column="0" lean-forward="false" selection-start-line="37315" selection-start-column="0" selection-end-line="37315" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_feature_coinflip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgo_api_roulette.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgo_api2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="149" column="57" lean-forward="false" selection-start-line="149" selection-start-column="57" selection-end-line="149" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_value_coinflip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/value1950.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bunny.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3417">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/percent.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/normalize_coinflip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/data_normalized.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52283" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/predict_wrong_continues.txt" />
+    <entry file="file://$PROJECT_DIR$/test.csv" />
+    <entry file="file://$PROJECT_DIR$/test2.csv" />
+    <entry file="file://$PROJECT_DIR$/test3.txt" />
+    <entry file="file://$PROJECT_DIR$/test.txt" />
+    <entry file="file://$PROJECT_DIR$/training.csv" />
+    <entry file="file://$PROJECT_DIR$/test2.txt" />
+    <entry file="file://$PROJECT_DIR$/training2.csv" />
+    <entry file="file://$PROJECT_DIR$/predict_wrong_continues2.txt" />
+    <entry file="file://$PROJECT_DIR$/evaluation.py" />
+    <entry file="file://$PROJECT_DIR$/a.html" />
+    <entry file="file://$PROJECT_DIR$/save_img_from_url.py" />
+    <entry file="file://$PROJECT_DIR$/local-filename.jpg" />
+    <entry file="file://$PROJECT_DIR$/call_get_captcha.js" />
+    <entry file="file://$PROJECT_DIR$/get_captcha_csgoatse.py" />
+    <entry file="file://$PROJECT_DIR$/26-05-2018.csv" />
+    <entry file="file://$PROJECT_DIR$/extract_feature_2.py" />
+    <entry file="file://$PROJECT_DIR$/26-05-2018-2.csv" />
+    <entry file="file://$PROJECT_DIR$/traning.csv" />
+    <entry file="file://$PROJECT_DIR$/chuanhoa.py" />
+    <entry file="file://$PROJECT_DIR$/csgo_api.py" />
+    <entry file="file://$PROJECT_DIR$/27-05-2018.csv" />
+    <entry file="file://$PROJECT_DIR$/log.txt" />
+    <entry file="file://$PROJECT_DIR$/log20160602-roulette.txt" />
+    <entry file="file://$PROJECT_DIR$/log20160602.txt" />
+    <entry file="file://$PROJECT_DIR$/training.py" />
+    <entry file="file://$PROJECT_DIR$/normalize_coinflip.py" />
+    <entry file="file://$PROJECT_DIR$/data_normalized.txt" />
+    <entry file="file://$PROJECT_DIR$/training.txt" />
+    <entry file="file://$PROJECT_DIR$/testing.txt" />
+    <entry file="file://$PROJECT_DIR$/extract_feature_coinflip.py" />
+    <entry file="file://$PROJECT_DIR$/csgo_api_roulette.py" />
+    <entry file="file://$PROJECT_DIR$/csgo_api2.py" />
+    <entry file="file://$PROJECT_DIR$/extract_value_coinflip.py" />
+    <entry file="file://$PROJECT_DIR$/value1950.txt" />
+    <entry file="file://$PROJECT_DIR$/bunny.txt" />
+    <entry file="file://$PROJECT_DIR$/percent.txt" />
     <entry file="file://$PROJECT_DIR$/csgoatse/percent.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -871,82 +544,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/predict.txt">
+    <entry file="file://$PROJECT_DIR$/csgoatse/normalize_coinflip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="7821" column="0" lean-forward="false" selection-start-line="7821" selection-start-column="0" selection-end-line="7821" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/testing.txt">
+    <entry file="file://$PROJECT_DIR$/csgoatse/log20160602.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="988" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/training.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="8999" column="0" lean-forward="false" selection-start-line="8999" selection-start-column="0" selection-end-line="8999" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/log20160602-roulette.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="9987" column="0" lean-forward="false" selection-start-line="8999" selection-start-column="0" selection-end-line="10585" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="44919" column="0" lean-forward="false" selection-start-line="44919" selection-start-column="0" selection-end-line="44919" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_coinflip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="140" column="17" lean-forward="false" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/log20160602-roulette.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1190">
+          <caret line="10588" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12408" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/training.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11214" column="0" lean-forward="false" selection-start-line="11214" selection-start-column="0" selection-end-line="11272" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/testing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_roulette.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="173" column="38" lean-forward="false" selection-start-line="173" selection-start-column="38" selection-end-line="173" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/data_normalized.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44932" column="65" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58269" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api_roulette.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="66" column="18" lean-forward="false" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/predict-roulette.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgoatse/csgo_api2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="137" selection-end-column="32" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csgoatse/extract_feature_roulette.py">
+    <entry file="file://$PROJECT_DIR$/csgoatse/predict.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="186" column="23" lean-forward="false" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="3071" column="4" lean-forward="false" selection-start-line="3071" selection-start-column="4" selection-end-line="3071" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csgoatse/evaluation_coinflip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="125">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding />
         </state>
       </provider>
