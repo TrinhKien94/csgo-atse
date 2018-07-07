@@ -158,7 +158,7 @@ for i in range(0,len(y_test)):
         if balance < minBalance:
             minBalance=balance
     else:
-        balance +=bet*0.9
+        balance +=bet*0.95
         if balance > maxBalance:
             maxBalance=balance
 

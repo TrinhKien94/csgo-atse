@@ -31,13 +31,14 @@ for i in range(count,0,-1):
         y_test.append(datas[1])
         if not truse:
             truse = True
-            datas[0] = convert_1_2(datas[0])
+            # datas[0] = convert_1_2(datas[0])
         else:
             truse = False
         # if countLose == 8 or countLose == 7:
         #     datas[0] = convert_1_2(datas[0])
         # if countLose == 9:
-        #     datas[0] = convert_1_2(datas[0])
+        # datas[0] = convert_1_2(datas[0])
+        # if datas[0] == '2':
         if datas[0] != datas[1]:
             countLose+=1
         else:

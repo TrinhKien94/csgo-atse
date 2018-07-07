@@ -102,39 +102,47 @@ class Employees(Resource):
         option = request.args.get('option')
         profit =request.args.get('profit')
         prev = request.args.get('prev')
-        log = option + "|" + profit + "|" + prev
-        log = log.replace(",","")
-        log = log.replace("\n", "")
-        log = log.replace("\s", "")
-        storeLog(log)
-        steamId= request.args.get('steam_id')
-        if int(profit) < 0:
-             option = convert_1_2(option)
-        log = option + "|" + profit + "|" + prev
-        log = log.replace(",","")
-        log = log.replace("\n", "")
-        log = log.replace("\s", "")
-        inputStr = log.split('|')
-        if steamId == '76561198052823882':
-            time = str(datetime.datetime.now())
-            log = time +"|"+log
-            storeLogBunny(log)
-        win, total = readLogPercent("percent.txt")
-        if int(profit) > 0:
-            win+=1
-        total+=1
-        percent = 0
-        if total!=0:
-            percent = 100.0 * float(win) / float(total)
-        storeLogPercent(str(win)+"|"+str(total),"percent.txt")
-        print("|".join(inputStr[0::2]))
-        inputStr = inputStr[:len(inputStr)-2]
+        if option is not None:
+            log = option + "|" + profit + "|" + prev
+            log = log.replace(",","")
+            log = log.replace("\n", "")
+            log = log.replace("\s", "")
+            storeLog(log)
+            steamId= request.args.get('steam_id')
+            if int(profit) < 0:
+                option = convert_1_2(option)
+            log = option + "|" + profit + "|" + prev
+            log = log.replace(",","")
+            log = log.replace("\n", "")
+            log = log.replace("\s", "")
+            inputStr = log.split('|')
+            if steamId == '76561198052823882':
+                time = str(datetime.datetime.now())
+                log = time +"|"+log
+                storeLogBunny(log)
+            win, total = readLogPercent("percent.txt")
+            if int(profit) > 0:
+                win+=1
+            total+=1
+            percent = 0
+            if total!=0:
+                percent = 100.0 * float(win) / float(total)
+            storeLogPercent(str(win)+"|"+str(total),"percent.txt")
+            print("|".join(inputStr[0::2]))
+            inputStr = inputStr[:len(inputStr)-2]
+        else:
+            prev = prev.replace(",","")
+            prev = prev.replace("\n", "")
+            prev = prev.replace("\s", "")
+            inputStr = prev.split('|')
+        print(inputStr)
         inputStr = [int(x) for x in inputStr]
         features = []
         features.append(inputStr[0::2])
         predict = str(clf.predict(features)[0])
         print(predict)
-        storeLogTruth(option)
+        if option is not None:
+            storeLogTruth(option)
         storeLogPredict(predict)
         # colors = request.args.get('colors')
         # values = request.args.get('values')
@@ -149,8 +157,10 @@ class Employees(Resource):
         # print "? "+str(clf.predict_proba(features)[0])
         # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
         # return {'predict': clf.predict(features)} # Fetches first column that is Employee ID
-        return {'predict': predict,'percent':percent,"total":total}
-
+        if option is not None:
+            return {'predict': predict,'percent':percent,"total":total}
+        else:
+            return {'predict': predict}
 class Tracks(Resource):
     def get(self):
         result = {'data': ['test']}

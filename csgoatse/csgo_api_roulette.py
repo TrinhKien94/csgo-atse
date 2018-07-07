@@ -9,8 +9,9 @@ app = Flask(__name__)
 CORS(app)
 api = Api(app)
 def storeLog(log):
-   hs = open("log20160602-roulette.txt","a")
-   hs.write(log+ "\n")
+   hs = open("log20180704-roulette.txt","a")
+   hs.write(log)
+   hs.write("\n")
    hs.close()
 def storeLogPercent(log,filename):
    hs = open(filename,"a")
@@ -74,41 +75,48 @@ def storeLogTruth(predict):
 
 class Employees(Resource):
     def get(self):
-        color = request.args.get('color')
-        value =request.args.get('value')
-        prev = request.args.get('prev')
-        log = color + "|" + value + "|" + prev
-        log = log.replace(",","")
-        # print(log)
+        # color = request.args.get('color')
+        # value =request.args.get('value')
+        # prev = request.args.get('prev')
+        # log = '|'.join(request.args)
+        log = ''
+        for str in request.args:
+            log += '|'+request.args.get(str)
         storeLog(log)
-        # log = log.replace("black\|\|green\|\|red\|","")
-        log = log.replace("black","2")
-        log = log.replace("red","1")
-        log = log.replace("green","0")
-        log = log.replace("2||0||1||","")
-        print(log)
-        inputStr = log.split('|')
-        inputStr = inputStr[:len(inputStr)-2]
-        inputStr = [int(x) for x in inputStr]
-        features = []
-        features.append(inputStr[0:])
-        predict = str(clf.predict(features)[0])
-        print(predict)
-        storeLogTruth(str(inputStr[0]))
-        storeLogPredict(str(predict))
-        # colors = request.args.get('colors')
-        # values = request.args.get('values')
-        # storeColor=colors.split(",")[0]
-        # storeValue=values.split(",")[0]
-        # # storeLog(storeColor+" "+storeValue)
-        # print colors
-        # print values
+        # storeLog(request.args.to_dict(flat=False))
+        # log = color + "|" + value + "|" + prev
+        # log = log.replace(",","")
+        # # print(log)
+        # storeLog(log)
+        # # log = log.replace("black\|\|green\|\|red\|","")
+        # log = log.replace("black","2")
+        # log = log.replace("red","1")
+        # log = log.replace("green","0")
+        # log = log.replace("2||0||1||","")
+        # print(log)
+        # inputStr = log.split('|')
+        # inputStr = inputStr[:len(inputStr)-2]
+        # inputStr = [int(x) for x in inputStr]
         # features = []
-        # features.append(extract_feature(colors,values))
-        # print features[0]
-        # print "? "+str(clf.predict_proba(features)[0])
-        # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
-        return {'predict': predict} # Fetches first column that is Employee ID
+        # features.append(inputStr[0:])
+        # predict = str(clf.predict(features)[0])
+        # print(predict)
+        # storeLogTruth(str(inputStr[0]))
+        # storeLogPredict(str(predict))
+        # # colors = request.args.get('colors')
+        # # values = request.args.get('values')
+        # # storeColor=colors.split(",")[0]
+        # # storeValue=values.split(",")[0]
+        # # # storeLog(storeColor+" "+storeValue)
+        # # print colors
+        # # print values
+        # # features = []
+        # # features.append(extract_feature(colors,values))
+        # # print features[0]
+        # # print "? "+str(clf.predict_proba(features)[0])
+        # # return {'predict': convert_number_to_color(clf.predict(features)[0])} # Fetches first column that is Employee ID
+        # return {'predict': predict} # Fetches first column that is Employee ID
+        return {'predict': "ok"}
 
 class Tracks(Resource):
     def get(self):
