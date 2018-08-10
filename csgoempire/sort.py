@@ -23,5 +23,5 @@ history = collections.OrderedDict(sorted(history.items()))
 print('Sort done')
 for k,v in history.items():
     f = open('history.txt','a')
-    f.write(str(k)+' '+v[0]+' '+v[1])
+    f.write(str(k)+' '+v[0]+' '+v[1]+'\n')
     f.close()
